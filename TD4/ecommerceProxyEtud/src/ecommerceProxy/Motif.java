@@ -3,25 +3,18 @@ package ecommerceProxy;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class Motif extends Transaction {
+public class Motif extends Transaction{
+    private float freq() throws IOException {
+        int nb = 0;
 
+        Dataset dataset = Dataset.getDataSet();
+        for (Transaction t : dataset.getTrans())
+            if (t.contains(this)) nb++;
 
-    private float frequence;
-
-    public Motif() { }
+        return (float) nb / (float) dataset.getTrans().size();
+    }
 
     public boolean isFreq() throws IOException {
-        return freq() >= Dataset.getDataset().getSeuil();
+        return freq() >= Dataset.getDataSet().getSeuil();
     }
-
-    private float freq() throws IOException {
-        ArrayList<Transaction> trans = Dataset.getDataset().getTrans();
-        for (Transaction t : trans) {
-            if (t.contains(this)) {
-                frequence++;
-            }
-        }
-        return frequence/trans.size();
-    }
-
 }

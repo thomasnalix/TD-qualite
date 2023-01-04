@@ -2,23 +2,32 @@ package ecommerceProxy;
 
 import java.util.ArrayList;
 
+import java.util.ArrayList;
+
 public class Transaction {
 
-    private ArrayList<Article> articles;
+    private ArrayList<Article> listeArticles;
 
     public Transaction() {
+        this.listeArticles = new ArrayList<Article>();
     }
 
-    public void add(Article a) {
-        articles.add(a);
+    @Override
+    public String toString() {
+        return "Transaction{" +
+                "listeArticles=" + listeArticles +
+                '}';
     }
 
-    public ArrayList<Article> getArticles() {
-        return articles;
+    public void add(Article a){
+        listeArticles.add(a);
     }
 
-    public boolean contains(Article a) {
-        return articles.contains(a);
+    public ArrayList<Article> getListeArticles() {
+        return listeArticles;
     }
 
+    protected boolean contains(Transaction motif) {
+        return listeArticles.containsAll(motif.getListeArticles());
+    }
 }

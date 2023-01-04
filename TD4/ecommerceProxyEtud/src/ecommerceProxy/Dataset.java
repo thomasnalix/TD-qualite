@@ -5,15 +5,15 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 public class Dataset {
 
-	private ArrayList<Transaction> trans;
+	private List<Transaction> trans;
 	private Article[] articles;
 	Instance inst = Instance.instance1;
 
 	private static Dataset dataset;
-
 
 	private Dataset() throws IOException {
 
@@ -22,7 +22,6 @@ public class Dataset {
 		for (int i = 0; i < inst.nbArticles; i++)
 			articles[i] = new Article(i);
 
-		//trans = new Collection<Transaction>();
 		trans = new ArrayList<Transaction>();
 
 		BufferedReader reader = new BufferedReader(new FileReader(inst.datasetPath));
@@ -42,8 +41,10 @@ public class Dataset {
 
 			// for each item in this line (transaction)
 			for (int i = 0; i < lineSplited.length; i++) {
+
 				int item = Integer.parseInt(lineSplited[i]);
 				transaction.add(articles[item]);
+
 			}
 			trans.add(transaction);
 
@@ -54,39 +55,55 @@ public class Dataset {
 
 	}
 
-	public Collection<Transaction> motifParser() throws IOException {
-		articles = new Article[inst.nbArticles];
-		for (int i = 0; i < inst.nbArticles; i++)
-			articles[i] = new Article(i);
+	public static synchronized Dataset getDataSet() throws IOException {
+		if (dataset == null)
+			dataset = new Dataset();
+		return dataset;
+	}
 
-		//trans = new Collection<Transaction>();
-		trans = new ArrayList<Transaction>();
-		BufferedReader reader = new BufferedReader(new FileReader(inst.datasetPath));
-		String line;
-		while (((line = reader.readLine()) != null)) {
-			if (line.isEmpty() == true || line.charAt(0) == '#' || line.charAt(0) == '%' || line.charAt(0) == '@') {
-				continue;
-			}
-			String[] lineSplited = line.split(" ");
-			Transaction transaction = new Transaction();
-			for (int i = 0; i < lineSplited.length; i++) {
-				int item = Integer.parseInt(lineSplited[i]);
-				transaction.add(articles[item]);
-			}
-			trans.add(transaction);
-		}
-		reader.close();
+	public List<Transaction> getTrans() {
 		return trans;
 	}
 
+	public Article[] getArticles() {
+		return articles;
+	}
 
+	public ArrayList<Motif> motifParser() throws IOException {
+		//TODO
+		ArrayList<Motif> listeMotifs = new ArrayList<Motif>();
+
+		BufferedReader reader = new BufferedReader(new FileReader(inst.motifsPath));
+		String line;
+		while (((line = reader.readLine()) != null)) {
+			String[] lineSplited = line.split(" ");
+
+			Motif motif = new Motif();
+
+			for (int i = 0; i < lineSplited.length; i++) {
+
+				int item = Integer.parseInt(lineSplited[i]);
+				motif.add(articles[item]);
+
+			}
+			listeMotifs.add(motif);
+		}
+
+		reader.close();
+
+		return listeMotifs;
+	}
+
+	public float getSeuil(){
+		return inst.seuil;
+	}
 
 	/////////////////////////////////// INSTANCES
 	/////////////////////////////////// //////////////////////////////////////////////////
 	enum Instance {
-		toy("ecommerceProxyEtud/data/toy.txt", "ecommerceProxyEtud/data/toymotifs.txt", 0.5f, 5),
-		instance1("ecommerceProxyEtud/data/ecommerce.txt", "ecommerceProxyEtud/data/motifs1.txt", 0.5f, 130),
-		instance2("ecommerceProxyEtud/data/ecommerce.txt", "ecommerceProxyEtud/data/motifs2.txt", 0.5f, 130),;
+		toy("data/toy.txt", "data/toymotifs.txt", 0.5f, 5),
+		instance1("data/ecommerce.txt", "data/motifs1.txt", 0.5f, 130),
+		instance2("data/ecommerce.txt", "data/motifs2.txt", 0.5f, 130),;
 
 		final String datasetPath;
 		final String motifsPath;
@@ -100,21 +117,6 @@ public class Dataset {
 			this.nbArticles = nbArticles;
 		}
 
-	}
-
-
-	public ArrayList<Transaction> getTrans() {
-		return trans;
-	}
-
-	public float getSeuil() {
-		return inst.seuil;
-	}
-
-	public static Dataset getDataset() throws IOException {
-		if (dataset == null)
-			dataset = new Dataset();
-		return dataset;
 	}
 
 
