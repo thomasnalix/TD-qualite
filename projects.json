@@ -7,23 +7,23 @@
         "description": "L’application (AgoraScript - AS) est une application web de décision collective (ou démocratie participative). Une fois déployée sur un serveur ouvert en permanence, cette application web permet de gérer un grand ensemble des questions (indépendantes les unes les autres).",
         "link": "https://github.com/Jasthom/Votee",
         "languages": [
-            { 
+            {
                 "name": "php",
                 "link": "bla"
             },
-            { 
+            {
                 "name": "html",
                 "link": "bla"
             },
-            { 
+            {
                 "name": "tailwindcss",
                 "link": "bla"
             },
-            { 
+            {
                 "name": "js",
                 "link": "bla"
             },
-            { 
+            {
                 "name": "isql+",
                 "link": "bla"
             }
@@ -37,15 +37,15 @@
         "description": "Le but est de proposer un projet qui respecte les principes web modernes avec une API Rest. Ce projet permettra, au travers d'une interface graphique développée en TypeScript / Angular, d'afficher des ingrédients et des recettes de cuisine récupérés par un backend développé en Spring en accédant à une base de données relationnelle.",
         "link": "https://github.com/Jasthom/Cookab",
         "languages": [
-            { 
+            {
                 "name": "angular",
                 "link": "bla"
             },
-            { 
+            {
                 "name": "spring",
                 "link": "bla"
             },
-            { 
+            {
                 "name": "mysql",
                 "link": "bla"
             }
@@ -59,98 +59,98 @@
         "description": "J'en ai pas encore",
         "link": "https://github.com/Jasthom/Pert",
         "languages": [
-            { 
+            {
                 "name": "java",
                 "link": "bla"
             }
         ]
     },
-        {
-        "id": 2,
+    {
+        "id": 4,
         "title": "Cookab",
         "image": "project",
         "date": "2022",
         "description": "Le but est de proposer un projet qui respecte les principes web modernes avec une API Rest. Ce projet permettra, au travers d'une interface graphique développée en TypeScript / Angular, d'afficher des ingrédients et des recettes de cuisine récupérés par un backend développé en Spring en accédant à une base de données relationnelle.",
         "link": "https://github.com/Jasthom/Cookab",
         "languages": [
-            { 
+            {
                 "name": "angular",
                 "link": "bla"
             },
-            { 
+            {
                 "name": "spring",
                 "link": "bla"
             },
-            { 
+            {
                 "name": "mysql",
                 "link": "bla"
             }
         ]
     },
-        {
-        "id": 2,
+    {
+        "id": 5,
         "title": "Cookab",
         "image": "project",
         "date": "2022",
         "description": "Le but est de proposer un projet qui respecte les principes web modernes avec une API Rest. Ce projet permettra, au travers d'une interface graphique développée en TypeScript / Angular, d'afficher des ingrédients et des recettes de cuisine récupérés par un backend développé en Spring en accédant à une base de données relationnelle.",
         "link": "https://github.com/Jasthom/Cookab",
         "languages": [
-            { 
+            {
                 "name": "angular",
                 "link": "bla"
             },
-            { 
+            {
                 "name": "spring",
                 "link": "bla"
             },
-            { 
+            {
                 "name": "mysql",
                 "link": "bla"
             }
         ]
     },
-        {
-        "id": 2,
+    {
+        "id": 6,
         "title": "Cookab",
         "image": "project",
         "date": "2022",
         "description": "Le but est de proposer un projet qui respecte les principes web modernes avec une API Rest. Ce projet permettra, au travers d'une interface graphique développée en TypeScript / Angular, d'afficher des ingrédients et des recettes de cuisine récupérés par un backend développé en Spring en accédant à une base de données relationnelle.",
         "link": "https://github.com/Jasthom/Cookab",
         "languages": [
-            { 
+            {
                 "name": "angular",
                 "link": "bla"
             },
-            { 
+            {
                 "name": "spring",
                 "link": "bla"
             },
-            { 
+            {
                 "name": "mysql",
                 "link": "bla"
             }
         ]
     },
-        {
-        "id": 2,
+    {
+        "id": 7,
         "title": "Cookab",
         "image": "project",
         "date": "2022",
         "description": "Le but est de proposer un projet qui respecte les principes web modernes avec une API Rest. Ce projet permettra, au travers d'une interface graphique développée en TypeScript / Angular, d'afficher des ingrédients et des recettes de cuisine récupérés par un backend développé en Spring en accédant à une base de données relationnelle.",
         "link": "https://github.com/Jasthom/Cookab",
         "languages": [
-            { 
+            {
                 "name": "angular",
                 "link": "bla"
             },
-            { 
+            {
                 "name": "spring",
                 "link": "bla"
             },
-            { 
+            {
                 "name": "mysql",
                 "link": "bla"
             }
         ]
-    },
+    }
 ]
