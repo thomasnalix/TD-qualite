@@ -64,5 +64,93 @@
                 "link": "bla"
             }
         ]
-    }
+    },
+        {
+        "id": 2,
+        "title": "Cookab",
+        "image": "project",
+        "date": "2022",
+        "description": "Le but est de proposer un projet qui respecte les principes web modernes avec une API Rest. Ce projet permettra, au travers d'une interface graphique développée en TypeScript / Angular, d'afficher des ingrédients et des recettes de cuisine récupérés par un backend développé en Spring en accédant à une base de données relationnelle.",
+        "link": "https://github.com/Jasthom/Cookab",
+        "languages": [
+            { 
+                "name": "angular",
+                "link": "bla"
+            },
+            { 
+                "name": "spring",
+                "link": "bla"
+            },
+            { 
+                "name": "mysql",
+                "link": "bla"
+            }
+        ]
+    },
+        {
+        "id": 2,
+        "title": "Cookab",
+        "image": "project",
+        "date": "2022",
+        "description": "Le but est de proposer un projet qui respecte les principes web modernes avec une API Rest. Ce projet permettra, au travers d'une interface graphique développée en TypeScript / Angular, d'afficher des ingrédients et des recettes de cuisine récupérés par un backend développé en Spring en accédant à une base de données relationnelle.",
+        "link": "https://github.com/Jasthom/Cookab",
+        "languages": [
+            { 
+                "name": "angular",
+                "link": "bla"
+            },
+            { 
+                "name": "spring",
+                "link": "bla"
+            },
+            { 
+                "name": "mysql",
+                "link": "bla"
+            }
+        ]
+    },
+        {
+        "id": 2,
+        "title": "Cookab",
+        "image": "project",
+        "date": "2022",
+        "description": "Le but est de proposer un projet qui respecte les principes web modernes avec une API Rest. Ce projet permettra, au travers d'une interface graphique développée en TypeScript / Angular, d'afficher des ingrédients et des recettes de cuisine récupérés par un backend développé en Spring en accédant à une base de données relationnelle.",
+        "link": "https://github.com/Jasthom/Cookab",
+        "languages": [
+            { 
+                "name": "angular",
+                "link": "bla"
+            },
+            { 
+                "name": "spring",
+                "link": "bla"
+            },
+            { 
+                "name": "mysql",
+                "link": "bla"
+            }
+        ]
+    },
+        {
+        "id": 2,
+        "title": "Cookab",
+        "image": "project",
+        "date": "2022",
+        "description": "Le but est de proposer un projet qui respecte les principes web modernes avec une API Rest. Ce projet permettra, au travers d'une interface graphique développée en TypeScript / Angular, d'afficher des ingrédients et des recettes de cuisine récupérés par un backend développé en Spring en accédant à une base de données relationnelle.",
+        "link": "https://github.com/Jasthom/Cookab",
+        "languages": [
+            { 
+                "name": "angular",
+                "link": "bla"
+            },
+            { 
+                "name": "spring",
+                "link": "bla"
+            },
+            { 
+                "name": "mysql",
+                "link": "bla"
+            }
+        ]
+    },
 ]
