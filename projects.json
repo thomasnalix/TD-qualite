@@ -2,52 +2,52 @@
     {
         "id": 1,
         "title": "Votee",
-        "image": "project",
+        "image": "voteeCover",
         "date": "2022",
         "description": "L’application (AgoraScript - AS) est une application web de décision collective (ou démocratie participative). Une fois déployée sur un serveur ouvert en permanence, cette application web permet de gérer un grand ensemble des questions (indépendantes les unes les autres).",
         "link": "https://github.com/Jasthom/Votee",
         "languages": [
             {
-                "name": "php",
-                "link": "bla"
+                "name": "PHP",
+                "link": "https://en.wikipedia.org/wiki/PHP"
             },
             {
-                "name": "html",
-                "link": "bla"
+                "name": "HTML",
+                "link": "https://en.wikipedia.org/wiki/HTML"
             },
             {
-                "name": "tailwindcss",
-                "link": "bla"
+                "name": "Tailwind",
+                "link": "https://tailwindcss.com/"
             },
             {
-                "name": "js",
-                "link": "bla"
+                "name": "JavaScript",
+                "link": "https://en.wikipedia.org/wiki/JavaScript"
             },
             {
-                "name": "isql+",
-                "link": "bla"
+                "name": "Isql+",
+                "link": "https://www.oracle.com/database/"
             }
         ]
     },
     {
         "id": 2,
         "title": "Cookab",
-        "image": "project",
+        "image": "cookabCover",
         "date": "2022",
         "description": "Le but est de proposer un projet qui respecte les principes web modernes avec une API Rest. Ce projet permettra, au travers d'une interface graphique développée en TypeScript / Angular, d'afficher des ingrédients et des recettes de cuisine récupérés par un backend développé en Spring en accédant à une base de données relationnelle.",
         "link": "https://github.com/Jasthom/Cookab",
         "languages": [
             {
-                "name": "angular",
-                "link": "bla"
+                "name": "Angular",
+                "link": "https://angular.io/"
             },
             {
-                "name": "spring",
-                "link": "bla"
+                "name": "Spring",
+                "link": "https://spring.io/"
             },
             {
-                "name": "mysql",
-                "link": "bla"
+                "name": "Mysql",
+                "link": "https://www.mysql.com/"
             }
         ]
     },
@@ -60,8 +60,8 @@
         "link": "https://github.com/Jasthom/Pert",
         "languages": [
             {
-                "name": "java",
-                "link": "bla"
+                "name": "Java",
+                "link": "https://en.wikipedia.org/wiki/Java_(programming_language)"
             }
         ]
     },
